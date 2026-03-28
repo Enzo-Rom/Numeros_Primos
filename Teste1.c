@@ -5,7 +5,7 @@
 int main(){
     void *malloc(size_t size);
     int *num_primos;
-    num_primos = malloc(1000 * sizeof(int));
+    num_primos = malloc(100000000 * sizeof(int));
     int k = 0; //indice do vetor de primos
     double raiz;
     int eprimo;
@@ -18,7 +18,7 @@ int main(){
         printf("Erro ao abrir o arquivo.\n");
         return 1;
     }
-    for (long i = 2; i < 1000; i++)
+    for (long i = 2; i < 100000000; i++)
     {
         raiz = sqrt(i);
         eprimo = 1;
